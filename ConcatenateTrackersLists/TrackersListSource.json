@@ -1,0 +1,6 @@
+{
+  "TrackerListSource": [
+    "https://cf.trackerslist.com/best.txt",
+    "https://ngosang.github.io/trackerslist/trackers_best_ip.txt"
+  ]
+}

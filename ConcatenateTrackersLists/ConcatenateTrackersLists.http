@@ -1,0 +1,6 @@
+@ConcatenateTrackersLists_HostAddress = http://localhost:5047
+
+GET {{ConcatenateTrackersLists_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
