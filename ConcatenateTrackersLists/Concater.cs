@@ -17,9 +17,16 @@ public class Concater
 
     private async Task<string> Concat(string uri)
     {
-        var resp = await httpClient.GetAsync(uri);
-        resp.EnsureSuccessStatusCode();
-        var content = await resp.Content.ReadAsStringAsync();
-        return content;
+        try
+        {
+            var resp = await httpClient.GetAsync(uri);
+            resp.EnsureSuccessStatusCode();
+            var content = await resp.Content.ReadAsStringAsync();
+            return content;
+        }
+        catch (Exception e)
+        {
+            return e.Message;
+        }
     }
 }
