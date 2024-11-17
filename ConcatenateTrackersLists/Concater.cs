@@ -26,7 +26,7 @@ public class Concater
         }
         catch (Exception e)
         {
-            return e.Message;
+            return $"{uri}: {e.Message}";
         }
     }
 }
